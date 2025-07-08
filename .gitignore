@@ -1,0 +1,48 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Dependency directories
+node_modules/
+.bower_components/
+
+# Environment variables
+.env
+.env.local
+.env.*
+
+# Build output
+dist/
+build/
+out/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# IDEs and editors
+.vscode/
+.idea/
+*.swp
+
+# OS-specific files
+*.bak
+*.tmp
+
+# Python (if you're using Python too)
+__pycache__/
+*.py[cod]
+*.pyo
+
+# TypeScript
+*.tsbuildinfo
+
+# Coverage
+coverage/
+*.lcov
+
+# Next.js
+.next/
