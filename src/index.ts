@@ -5,8 +5,6 @@ import { connectDB } from "./lib/db";
 import cors from "cors";
 const app = express();
 connectDB();
-app.use(bodyParser.json());
-app.use("/api/auth", authRoutes);
 app.use(
   cors({
     origin: ["http://localhost:3000"],
@@ -14,6 +12,8 @@ app.use(
     allowedHeaders: ["Content-Type", "Authorization"],
   })
 );
+app.use(bodyParser.json());
+app.use("/api/auth", authRoutes);
 app.use(
   (
     err: any,
