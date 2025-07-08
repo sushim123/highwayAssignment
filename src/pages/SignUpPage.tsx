@@ -63,6 +63,7 @@ const SignUpPage: React.FC = () => {
       const response = await axios.post(
         "/api/auth/signup/verify",
         {
+          email,
           otp,
         },
         {

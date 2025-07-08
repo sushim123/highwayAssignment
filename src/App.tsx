@@ -10,7 +10,7 @@ const App: React.FC = () => {
     <div className="min-h-screen flex items-center  justify-center p-4">
       <BrowserRouter>
         <Routes>
-          <Route path="/signup" element={<SignUpPage />} />
+          <Route path="/" element={<SignUpPage />} />
           <Route path="/login" element={<SignInPage />} />
           <Route path="/dashboard" element={<DashboardPage />} />
         </Routes>

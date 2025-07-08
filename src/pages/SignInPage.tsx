@@ -3,11 +3,6 @@ import axios from "axios";
 import { Link, useNavigate } from "react-router-dom";
 
 import backgroundImage from "../assets/images/image.jpg";
-
-// When using a proxy in package.json, you typically don't need API_BASE_URL here.
-// The proxy handles routing requests like /api/auth/profile to http://localhost:4000/api/auth/profile.
-// const API_BASE_URL = process.env.REACT_APP_BACKEND_URL; // This line is commented out as it's no longer needed with proxy
-
 const SignInPage: React.FC = () => {
   const [email, setEmail] = useState<string>("");
   const [otp, setOtp] = useState<string>("");
@@ -259,7 +254,7 @@ const SignInPage: React.FC = () => {
 
           <p className="w-full md:w-[399px] h-[21px] md:h-[27px] font-inter font-normal text-sm md:text-lg leading-[150%] text-center text-gray-600">
             Need an account?{" "}
-            <Link to="/signup" className="text-blue-500 hover:underline">
+            <Link to="/" className="text-blue-500 hover:underline">
               Create one
             </Link>
           </p>
